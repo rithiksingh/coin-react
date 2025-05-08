@@ -4,6 +4,7 @@ import { ArrowRight, BarChart3, DollarSign, PieChart, Shield, TrendingUp } from 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import PublicLayout from "@/components/public-layout"
+import { InvestmentCalculator } from "@/components/investment-calculator"
 
 export default function LandingPage() {
   return (
@@ -25,6 +26,16 @@ export default function LandingPage() {
           </div>
         </div>
 
+        {/* Investment Calculator Section */}
+        <div className="mb-16">
+          <div className="mb-8 text-center">
+            <h2 className="mb-2 text-3xl font-bold">Calculate Your Investment</h2>
+            <p className="text-muted-foreground">See how your investments can grow over time</p>
+          </div>
+          <div className="max-w-3xl mx-auto">
+            <InvestmentCalculator />
+          </div>
+        </div>
         {/* Categories Section */}
         <div className="mb-16">
           <div className="mb-8 text-center">
