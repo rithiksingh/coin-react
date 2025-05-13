@@ -10,6 +10,8 @@ import { Menu, Search, Wallet } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { StockTicker } from "@/components/stock-ticker"
+import { SiteFooter } from "@/components/site-footer"
 
 export default function PublicLayout({ children }: { children: React.ReactNode }) {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
@@ -87,23 +89,16 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
         </div>
       </header>
 
+      {/* Fixed Stock Ticker */}
+      <div className="sticky top-16 z-20 w-full">
+        <StockTicker />
+      </div>
+
       {/* Main Content */}
       <main className="flex-1">{children}</main>
 
       {/* Footer */}
-      <footer className="border-t py-6 md:py-0">
-        <div className="container flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row">
-          <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Coin. All rights reserved.</p>
-          <div className="flex gap-4">
-            <Link href="/terms" className="text-sm text-muted-foreground hover:underline">
-              Terms
-            </Link>
-            <Link href="/privacy" className="text-sm text-muted-foreground hover:underline">
-              Privacy
-            </Link>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   )
 }

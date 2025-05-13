@@ -117,7 +117,7 @@ export function InvestmentCalculator() {
             <div className="grid gap-4">
               <div className="space-y-2">
                 <div className="flex justify-between">
-                  <Label htmlFor="lumpsum-amount">Investment Amount (BHD)</Label>
+                  <Label htmlFor="lumpsum-amount">Investment Amount (SAR)</Label>
                   <span className="text-sm font-medium">{lumpsumAmount.toLocaleString()}</span>
                 </div>
                 <div className="grid grid-cols-[1fr_120px] gap-2">
@@ -194,7 +194,7 @@ export function InvestmentCalculator() {
                 <CardContent className="p-4">
                   <div className="text-sm text-muted-foreground">Invested Amount</div>
                   <div className="text-2xl font-bold">
-                    {lumpsumResult.investedAmount.toLocaleString(undefined, { maximumFractionDigits: 0 })} BHD
+                    {lumpsumResult.investedAmount.toLocaleString(undefined, { maximumFractionDigits: 0 })} SAR
                   </div>
                 </CardContent>
               </Card>
@@ -202,7 +202,7 @@ export function InvestmentCalculator() {
                 <CardContent className="p-4">
                   <div className="text-sm text-muted-foreground">Estimated Returns</div>
                   <div className="text-2xl font-bold text-emerald-500">
-                    {lumpsumResult.estimatedReturns.toLocaleString(undefined, { maximumFractionDigits: 0 })} BHD
+                    {lumpsumResult.estimatedReturns.toLocaleString(undefined, { maximumFractionDigits: 0 })} SAR
                   </div>
                 </CardContent>
               </Card>
@@ -210,7 +210,7 @@ export function InvestmentCalculator() {
                 <CardContent className="p-4">
                   <div className="text-sm opacity-90">Total Value</div>
                   <div className="text-3xl font-bold">
-                    {lumpsumResult.totalValue.toLocaleString(undefined, { maximumFractionDigits: 0 })} BHD
+                    {lumpsumResult.totalValue.toLocaleString(undefined, { maximumFractionDigits: 0 })} SAR
                   </div>
                   <div className="text-sm mt-1 opacity-90">{lumpsumResult.growthMultiple.toFixed(2)}x growth</div>
                 </CardContent>
@@ -222,7 +222,7 @@ export function InvestmentCalculator() {
             <div className="grid gap-4">
               <div className="space-y-2">
                 <div className="flex justify-between">
-                  <Label htmlFor="sip-amount">Monthly Investment (BHD)</Label>
+                  <Label htmlFor="sip-amount">Monthly Investment (SAR)</Label>
                   <span className="text-sm font-medium">{sipAmount.toLocaleString()}</span>
                 </div>
                 <div className="grid grid-cols-[1fr_120px] gap-2">
@@ -313,7 +313,7 @@ export function InvestmentCalculator() {
                 <CardContent className="p-4">
                   <div className="text-sm text-muted-foreground">Invested Amount</div>
                   <div className="text-2xl font-bold">
-                    {sipResult.investedAmount.toLocaleString(undefined, { maximumFractionDigits: 0 })} BHD
+                    {sipResult.investedAmount.toLocaleString(undefined, { maximumFractionDigits: 0 })} SAR
                   </div>
                 </CardContent>
               </Card>
@@ -321,7 +321,7 @@ export function InvestmentCalculator() {
                 <CardContent className="p-4">
                   <div className="text-sm text-muted-foreground">Estimated Returns</div>
                   <div className="text-2xl font-bold text-emerald-500">
-                    {sipResult.estimatedReturns.toLocaleString(undefined, { maximumFractionDigits: 0 })} BHD
+                    {sipResult.estimatedReturns.toLocaleString(undefined, { maximumFractionDigits: 0 })} SAR
                   </div>
                 </CardContent>
               </Card>
@@ -329,7 +329,7 @@ export function InvestmentCalculator() {
                 <CardContent className="p-4">
                   <div className="text-sm opacity-90">Total Value</div>
                   <div className="text-3xl font-bold">
-                    {sipResult.totalValue.toLocaleString(undefined, { maximumFractionDigits: 0 })} BHD
+                    {sipResult.totalValue.toLocaleString(undefined, { maximumFractionDigits: 0 })} SAR
                   </div>
                   <div className="text-sm mt-1 opacity-90">{sipResult.growthMultiple.toFixed(2)}x growth</div>
                 </CardContent>

@@ -116,10 +116,15 @@ const assetClassOptions = [
 ]
 const fundObjectiveOptions = [
   "All",
-  "Growth",
-  "Income",
-  "Capital Preservation",
-  "Income and Growth",
+  "Equity",
+  "Bond/Sukuk",
+  "Money Market",
+  "Commodity",
+  "Real Estate",
+  "Multi Asset",
+  "Funds of Funds",
+  "Balanced",
+  "Others",
 ]
 const shariahCompliantOptions = ["All", "Yes", "No"]
 const fundCurrencyOptions = ["All", "SAR", "USD"]

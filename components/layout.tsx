@@ -11,6 +11,8 @@ import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { Input } from "@/components/ui/input"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { StockTicker } from "@/components/stock-ticker"
+import { SiteFooter } from "@/components/site-footer"
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
@@ -122,8 +124,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </div>
       </header>
 
+      {/* Fixed Stock Ticker */}
+      <div className="sticky top-16 z-20 w-full">
+        <StockTicker />
+      </div>
+
       {/* Main Content */}
       <main className="flex-1">{children}</main>
+
+      {/* Footer */}
+      <SiteFooter />
     </div>
   )
 }
